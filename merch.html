@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Merchandise</title>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+		<header>
+		    <img class="logo" src="images/logo.jpeg">
+		</header>
+        <nav>
+            <ul>
+		   
+               <li> <a class="button" href="../FINAL/about.html">About</a></li>
+		       <li><a class="button" href="https://beinvolved.indiana.edu/organization/viewsatiu">BeInvolved</a></li>
+		       <li> <a class="button" href="../FINAL/merch.html">Merchandise</a></li>
+               <li> <a class="button" href="../FINAL/calendar.html">Calendar</a></li>
+               <li> <a class="button" href="../FINAL/hikingloc.html">Hiking Locations</a></li>
+               <li> <a class="button" href="../FINAL/contact.html">Contact</a></li>
+            
+            </ul>
+        </nav>
+		<nav id="mySidenav" class="sidenav">
+			<ul class="ulside">
+				<li><a class="closebtn">&times;</a></li>
+				<li class="liside"><a href="../FINAL/index.html">Home</a></li>
+				<li class="liside"><a href="https://beinvolved.indiana.edu/organization/viewsatiu">BeInvolved</a></li>
+				<li class="liside"><a href="../FINAL/calendar.html">Calendar</a></li>
+				<li class="liside"><a href="../FINAL/contact.html">Contact</a></li>
+				<li class="liside"><a href="https://www.instagram.com/viewsatiu/">Instagram</a></li>
+
+			</ul>
+		</nav>
+		<div class="openbtn">
+			<i class="fas fa-bars fa-2x"></i>
+			<span class="menu-text">menu</span>
+		</div>
+
+		<div class="all-over-bkg"></div>
+        <br>
+        <br>
+		<div class="container">
+		        <h2>Merch For Sale!!</h2>
+		        <p> Here is a place to look at all of our Merchandise for sale. 
+                    You can purchase by venmoing @Conner-Wright-22 the money with your name and desired items in the memo. </p>
+		</div>
+
+       <div class="container1">
+		<img class="shirt" src="images/shirts.png">
+		</div>
+        
+        <div class="container">
+		        <h2>Shirts - $25</h2>
+                <p>Sizes - S | M | L | XL | XXL </p>
+        </div>
+
+        <div class="container1">
+            <img src="images/hat.jpeg">
+            </div>
+            
+            <div class="container">
+                    <h2>Hats - $20</h2>
+                    <p>Adjustable Snapback </p>
+            </div>
+			<br>
+		
+		<footer>
+			<p class="foottxt">Email: ViewsatIU@gmail.com<p>
+			<a class="foottxt" href="https://www.instagram.com/viewsatiu/">Instagram</a>
+			
+		</footer>
+
+
+		<!-- JAVASCRIPT -->
+		<script src="js/nav.js"></script>
+		<script>
+			function toggleDropdown() {
+				document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+			}
+			document.querySelector('.toggle').addEventListener('click', toggleDropdown);	
+			</script>
+			<script>
+						function openNav() {
+			  document.querySelector('#mySidenav').style.width = "250px"; 
+			  document.querySelector('.all-over-bkg').classList.add('is-visible');
+			}
+	
+			function closeNav() {
+				  document.querySelector('#mySidenav').style.width = "0"; 
+				  document.querySelector('.all-over-bkg').classList.remove('is-visible');
+			}
+	
+			document.querySelector('.openbtn').addEventListener('click', openNav);
+			document.querySelector('.closebtn').addEventListener('click', closeNav);
+			</script>
+	</body>
+</html>

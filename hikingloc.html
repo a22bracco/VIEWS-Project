@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hiking Locations</title>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<header>
+		    <img class="logo" src="images/logo.jpeg">
+		</header>
+		<nav>
+            <ul>
+		   
+               <li> <a class="button" href="../FINAL/about.html">About</a></li>
+		       <li><a class="button" href="https://beinvolved.indiana.edu/organization/viewsatiu">BeInvolved</a></li>
+		       <li> <a class="button" href="../FINAL/merch.html">Merchandise</a></li>
+               <li> <a class="button" href="../FINAL/calendar.html">Calendar</a></li>
+               <li> <a class="button" href="../FINAL/hikingloc.html">Hiking Locations</a></li>
+               <li> <a class="button" href="../FINAL/contact.html">Contact</a></li>
+            
+            </ul>
+        </nav>
+		<nav id="mySidenav" class="sidenav">
+			<ul class="ulside">
+				<li><a class="closebtn">&times;</a></li>
+				<li class="liside"><a href="../FINAL/index.html">Home</a></li>
+				<li class="liside"><a href="https://beinvolved.indiana.edu/organization/viewsatiu">BeInvolved</a></li>
+				<li class="liside"><a href="../FINAL/calendar.html">Calendar</a></li>
+				<li class="liside"><a href="../FINAL/contact.html">Contact</a></li>
+				<li class="liside"><a href="https://www.instagram.com/viewsatiu/">Instagram</a></li>
+
+			</ul>
+		</nav>
+		<div class="openbtn">
+			<i class="fas fa-bars fa-2x"></i>
+			<span class="menu-text">menu</span>
+		</div>
+
+		<div class="all-over-bkg"></div>
+		<div class="container3">
+            <h2 class="blacktxt">McCormick's Creek</h2>
+		<img src="images/mccormickcreek.png">
+            <p class="blacktxt">At this location we hike along two trails where we see accessible caves and waterfalls!</p>
+		</div>
+			<div class="container">
+		        <h2>Cedar Bluffs</h2>
+                <img src="images/cedarbluff.png">
+		        <p>This hike is closer to a mile long and has a fun spot to stop and skip rocks as well as a scenic creek to walk along. It also has an amazing view at the top of the bluff.</p>
+			</div>  
+        
+		<div class="container3">
+            <h2 class="blacktxt">Green's Bluff</h2>
+			<img src="images/greenbluff.png">
+            <p class="blacktxt">This hike features a pretty creek where we often stop to skip rocks and a gorgeous overlook near the end of the two mile hike.</p>
+		</div>
+        
+			<div class="container">
+		        <h2>Leonard Springs</h2>
+                <img src="images/leonardspring.png">	
+		        <p>This hike offers some cave openings you can crawl in as well as nice calm walk through the woods.</p>
+			</div>
+
+        <div class="container3">
+            <h2 class="blacktxt">Brown County</h2>	
+            <img src="images/browncounty.png">
+            <p class="blacktxt">A place we often go in the Fall to hike around Ogle lake while the leaves change colors. We also stop to see the many beautiful overlooks at this State Park.</p>
+        </div>
+
+        <div class="container">
+            <h2>Patton Cave</h2>
+            <img src="images/pattoncave.png">	
+            <p>A four mile hike that sometimes can take a little longer depending on the route. It leads to a massive Cave entrance and overall is the most challenging hike we do.</p>
+        </div>
+
+        <div class="container3">
+            <h2 class="blacktxt">Dilcher Turner Canyon Forest</h2>
+            <img src="images/dilcherturnercanyonforest.jpg">	
+            <p class="blacktxt">The location here features 2.5 miles of trails with some awesome views and a cool waterfall!.</p>
+        </div>
+
+        <div class="container">
+            <h2>And More!</h2>	
+            <p>These are the most common locations we vist, but there are many more.</p>
+        </div>
+        
+		<br>
+		<footer>
+			<p class="foottxt">Email: ViewsatIU@gmail.com<p>
+				<a class="foottxt" href="https://www.instagram.com/viewsatiu/">Instagram</a>	
+		</footer>
+
+
+		<!-- JAVASCRIPT -->
+		<script src="js/nav.js"></script>
+		<script>
+			function toggleDropdown() {
+				document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+			}
+			document.querySelector('.toggle').addEventListener('click', toggleDropdown);	
+			</script>
+			<script>
+						function openNav() {
+			  document.querySelector('#mySidenav').style.width = "250px"; 
+			  document.querySelector('.all-over-bkg').classList.add('is-visible');
+			}
+	
+			function closeNav() {
+				  document.querySelector('#mySidenav').style.width = "0"; 
+				  document.querySelector('.all-over-bkg').classList.remove('is-visible');
+			}
+	
+			document.querySelector('.openbtn').addEventListener('click', openNav);
+			document.querySelector('.closebtn').addEventListener('click', closeNav);
+			</script>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>About</title>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<header>
+		    <img class="logo" src="images/logo.jpeg">
+		</header>
+        <nav>
+            <ul>
+		   
+               <li> <a class="button" href="../FINAL/about.html">About</a></li>
+		       <li><a class="button" href="https://beinvolved.indiana.edu/organization/viewsatiu">BeInvolved</a></li>
+		       <li> <a class="button" href="../FINAL/merch.html">Merchandise</a></li>
+               <li> <a class="button" href="../FINAL/calendar.html">Calendar</a></li>
+               <li> <a class="button" href="../FINAL/hikingloc.html">Hiking Locations</a></li>
+               <li> <a class="button" href="../FINAL/contact.html">Contact</a></li>
+            
+            </ul>
+        </nav>
+		<nav id="mySidenav" class="sidenav">
+			<ul class="ulside">
+				<li><a class="closebtn">&times;</a></li>
+				<li class="liside"><a href="../FINAL/index.html">Home</a></li>
+				<li class="liside"><a href="https://beinvolved.indiana.edu/organization/viewsatiu">BeInvolved</a></li>
+				<li class="liside"><a href="../FINAL/calendar.html">Calendar</a></li>
+				<li class="liside"><a href="../FINAL/contact.html">Contact</a></li>
+				<li class="liside"><a href="https://www.instagram.com/viewsatiu/">Instagram</a></li>
+
+			</ul>
+		</nav>
+		<div class="openbtn">
+			<i class="fas fa-bars fa-2x"></i>
+			<span class="menu-text">menu</span>
+		</div>
+
+		<div class="all-over-bkg"></div>
+        
+		<div class="container1">
+		<img src="images/founder.jpeg">
+		</div>
+		<div class="container">
+		        <h2>How We Started</h2>
+		        <p> Our Founder, Giulio Bracco came to college as an avid hiker and in his second year IU began looking for a group to
+                    enjoy this interesst with others. Giulio saw the "Hiking Club at IU" to only find that they hiked for mileage. This was not his goal when hiking
+                     so he gathered some of his friends and founded "Views at IU" with the focus of
+                finding the best views in and around Bloomington. </p>
+		</div>
+            <br>
+			<br>
+        <div class="container">
+		        <h2>Meet Our Current Board</h2>
+                <h3>President</h3>
+                <p class="names">Armando Bracco  |  abracco@iu.edu</p>
+                <h3>Vice President</h3>
+		        <p class="names">Madeline Moss | madkmoss@iu.edu</p>
+                <h3>Treasurer</h3>
+                <p class="names">Conner Wright | wrighcon@iu.edu</p>
+                <h3>Secretary</h3>
+                <p class="names">Mary Groover | megroove@iu.edu</p>
+                <h3>Safety & Sustainability</h3>
+                <p class="names">Jacob Birkmire | jabirkmi@iu.edu</p>
+        </div>
+			<br>
+		
+		<footer>
+			<p class="foottxt">Email: ViewsatIU@gmail.com<p>
+			<a class="foottxt" href="https://www.instagram.com/viewsatiu/">Instagram</a>	
+		</footer>
+
+
+		<!-- JAVASCRIPT -->
+		<script src="js/nav.js"></script>
+		<script>
+			function toggleDropdown() {
+				document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+			}
+			document.querySelector('.toggle').addEventListener('click', toggleDropdown);	
+			</script>
+			<script>
+						function openNav() {
+			  document.querySelector('#mySidenav').style.width = "250px"; 
+			  document.querySelector('.all-over-bkg').classList.add('is-visible');
+			}
+	
+			function closeNav() {
+				  document.querySelector('#mySidenav').style.width = "0"; 
+				  document.querySelector('.all-over-bkg').classList.remove('is-visible');
+			}
+	
+			document.querySelector('.openbtn').addEventListener('click', openNav);
+			document.querySelector('.closebtn').addEventListener('click', closeNav);
+			</script>
+	</body>
+</html>

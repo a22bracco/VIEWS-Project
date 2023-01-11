@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>I360 Project Final</title>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+		<header>
+			<img class="logo" src="images/logo.jpeg">
+		</header>
+		<nav>
+            <ul>
+		   
+               <li> <a class="button" href="../FINAL/about.html">About</a></li>
+		       <li><a class="button" href="https://beinvolved.indiana.edu/organization/viewsatiu">BeInvolved</a></li>
+		       <li> <a class="button" href="../FINAL/merch.html">Merchandise</a></li>
+               <li> <a class="button" href="../FINAL/calendar.html">Calendar</a></li>
+               <li> <a class="button" href="../FINAL/hikingloc.html">Hiking Locations</a></li>
+               <li> <a class="button" href="../FINAL/contact.html">Contact</a></li>
+            
+            </ul>
+        </nav>
+		<nav id="mySidenav" class="sidenav">
+			<ul class="ulside">
+				<li><a class="closebtn">&times;</a></li>
+				<li class="liside"><a href="../FINAL/index.html">Home</a></li>
+				<li class="liside"><a href="https://beinvolved.indiana.edu/organization/viewsatiu">BeInvolved</a></li>
+				<li class="liside"><a href="../FINAL/calendar.html">Calendar</a></li>
+				<li class="liside"><a href="../FINAL/contact.html">Contact</a></li>
+				<li class="liside"><a href="https://www.instagram.com/viewsatiu/">Instagram</a></li>
+
+			</ul>
+		</nav>
+		<div class="openbtn">
+			<i class="fas fa-bars fa-2x"></i>
+			<span class="menu-text">menu</span>
+		</div>
+
+		<div class="all-over-bkg"></div>
+		<div class="container1">
+		<img src="images/creek.jpg">
+		</div>
+			<div class="container">
+		        <h2>What We Do?</h2>
+		        <p>Views at IU is the premier hiking club at Indina University. The club was founded by Giulio Bracco who wanted to hike with the focus of
+                finding the best views in and around Bloomington. Since the founding of the club in 2018 it has grown to over 200 members. We hike 1-2 times a week usually on the weekends. We also do multiple social
+                events throughout the semester as well as one camping trip per semester. We have gone to awesome places like the Red River Gorge and Mammoth Cave.</p>
+		        <p>We strive to provide IU students with the opportunity to explore the outdoors and all they have to offer.</p>
+			</div>  
+        
+		<div class="container1">
+			<img src="images/group.jpg" class="leftimg">
+		</div>
+        
+			<div class="container">
+		        <h3>Why Join Us?</h3>	
+		        <p>We are a fun club that seeks the adventure of the outdoors and every fun opportunity it has to offer. We are a welcoming that wants any and everyone interested to join us and experience the fun of our club.</p>
+			</div>
+
+        
+		<br>
+		<footer>
+			<p class="foottxt">Email: ViewsatIU@gmail.com<p>
+			<a class="foottxt" href="https://www.instagram.com/viewsatiu/">Instagram</a>	
+		</footer>
+
+
+		<!-- JAVASCRIPT -->
+		<script src="js/nav.js"></script>
+		<script>
+			function toggleDropdown() {
+				document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+			}
+			document.querySelector('.toggle').addEventListener('click', toggleDropdown);	
+			</script>
+			<script>
+						function openNav() {
+			  document.querySelector('#mySidenav').style.width = "250px"; 
+			  document.querySelector('.all-over-bkg').classList.add('is-visible');
+			}
+	
+			function closeNav() {
+				  document.querySelector('#mySidenav').style.width = "0"; 
+				  document.querySelector('.all-over-bkg').classList.remove('is-visible');
+			}
+	
+			document.querySelector('.openbtn').addEventListener('click', openNav);
+			document.querySelector('.closebtn').addEventListener('click', closeNav);
+			</script>
+		
+		
+	</body>
+</html>
